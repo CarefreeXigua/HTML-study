@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hughes Lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西瓜的神秘商店 - 个人主页</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* 隐藏页面溢出部分 */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: auto;
+            z-index: -1; /* 将视频置于其他内容之后 */
+        }
+
+        header {
+            background-color: transparent;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        .slogan {
+            color: #079bf1;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            opacity: 20;
+            transition: opacity 1s ease-in-out;
+            position: relative;
+            left: 50%; 
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        footer {
+            background-color: transparent;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1;
+            margin-top: auto; /* 使用 margin-top: auto 将 footer 推到底部 */
+            text-align: center;
+            color: #fff;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            z-index: 2;
+            color: #fff;
+            position: relative;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;/*导航选项的右间距*/
+            text-decoration: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="sunsetbackground.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+        <a href="#">主页</a>
+        <a href="#">相册</a>
+        <a href="#">影视</a>
+        <a href="#">工具</a>
+        <a href="#">帮助</a>
+    </nav>
+
+    <header>
+        <h1>“西瓜的神秘商店”，COMING SOON...</h1>
+        <div class="slogan">Keep exploring the unknown world.
+        </div>
+    </header>
+
+    <footer>
+        &copy; 2023 西瓜的神秘商店. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
